@@ -1,0 +1,28 @@
+import React from 'react';
+import { Nav, Navbar } from 'react-bootstrap';
+import { NavLink } from 'react-router-dom';
+import logo from '../../Images/StartUp_logo.png';
+const NavBar = () => {
+    return (
+        <>
+            <Navbar expand="lg">
+                <Navbar.Brand href="/">
+                    <img alt="START-UP LOGO mt-4" src={logo} className="d-inline-block align-top"/>{' '}<span className="logo-text">START-UP</span><p className="logo-text">AGENCY</p>
+                </Navbar.Brand>
+                <Navbar.Toggle aria-controls="basic-navbar-nav" />
+                <Navbar.Collapse id="basic-navbar-nav">
+                    <Nav className="ml-auto">
+                        <NavLink className="ml-4 text-white" to="/service">Service</NavLink>
+                        <NavLink className="ml-4 text-white" to="/howWeWork">How We Work</NavLink>
+                        <NavLink className="ml-4 text-white" to="/aboutUs">About us</NavLink>
+                        <NavLink className="ml-4 text-white" to="/ourTeam">Team</NavLink>
+                        <NavLink className="ml-4 text-white" to="/blog">Blog</NavLink>
+                        <NavLink className="ml-4 text-white" to="/contact">Contact</NavLink>
+                    </Nav>
+                </Navbar.Collapse>
+            </Navbar>
+        </>
+    );
+};
+
+export default NavBar;

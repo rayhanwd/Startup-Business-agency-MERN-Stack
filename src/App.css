@@ -1,38 +1,191 @@
-.App {
-  text-align: center;
+/* import google font */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* import google font */
+
+/* ###################################
+##################### */
+
+/* Common css style */
+button,
+button:hover,
+button:focus{
+    outline: none !important;
+    background:none !important;
+    box-shadow: none !important;
+    border: none !important;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1, h2, h3, h4, p {
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+a {
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none !important;
+}
+.font-12{
+    font-size:12px;
+}
+.font-14{
+    font-size:14px;
+}
+.font-20{
+    font-size:22px;
+    font-weight: 600;
+}
+.font-30{
+    font-size:26px;
+}
+.w-75 img{
+    max-width:95% !important;
+}
+/* Common css style */
+
+/* ##################################
+###################### */
+
+.header__bg {
+    background-image: url('../src/Images/StartUp_bg.png');
+    background-size: cover;
+    height: 700px;
+    background-position: bottom;
+    background-repeat: no-repeat;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+span.logo-text {
+    font-size: 13px;
+    color: #fff;
 }
 
-.App-link {
-  color: #61dafb;
+p.logo-text {
+    font-size: 11px;
+    color: #fff;
+    margin-left: 41px;
+    margin-top: -15px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.header_image img {
+    width: 300px;
+    padding: 30px;
+}
+
+/* Header img animation */
+
+.header_image img {
+    -webkit-animation: mover 1s infinite alternate;
+    animation: mover 1s infinite alternate;
+}
+
+.header_image img {
+    -webkit-animation: mover 1s infinite alternate;
+    animation: mover 1s infinite alternate;
+}
+
+@-webkit-keyframes mover {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-10px);
+    }
+}
+
+@keyframes mover {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-10px);
+    }
+}
+
+/* Header img animation */
+.left-button {
+    background: #fff !important;
+    color: #121212 !important;
+    padding: 10px 17px;
+    border-radius: 25px;
+    font-size: 12px;
+}
+.left-button:hover,
+.left-button:focus
+{
+    border: 2px solid #fff !important;
+}
+.right-button {
+    background-color: #2330ce !important;
+    color: #fff !important;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-size: 12px;
+}
+.right-button:hover,
+.right-button:focus{
+    border: 2px solid #2330ce !important;
+}
+.card {
+    border: none;
+    background-color: #ffffff;
+    border-radius: 8px;
+}
+
+.service-container {
+    margin-top: -260px;
+}
+
+.service-img {
+    width: 20%;
+    margin-top: 25px;
+}
+
+.service-title {
+    text-align: center;
+}
+
+.service-description {
+    text-align: center;
+    color: #121212;
+    font-size: 14px;
+}
+
+.work-heading {
+    color: #121212;
+    text-align: center;
+    padding: 40px;
+}
+.work-title{
+    font-size:18px;
+}
+.title-text{
+    color: #e75b4c;
+}
+.work-icon svg {
+    margin: 0px 20px;
+    color: #e75b4c;
+    background: #eeeeee;
+    font-size: 40px;
+    border-radius: 4px;
+    padding: 7px;
+}
+
+.work-text {
+    color: #121212;
+    font-size: 12px;
+}
+.feature-container{
+    background: #fff;
+    padding-top: 80px;
+}
+
+.price-btn{
+    background:#e3e3e3;
+    padding: 10px 13px;
+    border-radius: 25px;
+    margin: 0px 50px;
+    text-align: center;
+}
+.gold-color{
+    background: #e75b4c;
 }
