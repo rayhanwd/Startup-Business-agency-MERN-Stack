@@ -1,10 +1,15 @@
 import React from 'react';
+import Footer from './../Components/Footer/Footer';
+import AboutCompany from '../Components/AboutPage/AboutCompany';
+import NavBar from './../Components/Nav/NavBar';
 
 const AboutUs = () => {
     return (
-        <div>
-            a
-        </div>
+        <>
+            <NavBar background="navbar-bg"/>
+            <AboutCompany/>
+            <Footer/>
+        </>
     );
 };
 

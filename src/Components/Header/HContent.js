@@ -7,9 +7,9 @@ const HContent = () => {
             <Row>
                 <Col sm={6}>
                     <div className="mt-5">
-                        <h1 className="mt-4">The Best Way to Grow
+                        <h1 className="mt-4 text-white">The Best Way to Grow
                             Your Start-up</h1>
-                        <p className="mt-4">
+                        <p className="mt-4 text-white">
                             This is a simple hero unit, a simple jumbotron-style component for calling
                             extra attention to featured content or information.
                         </p>

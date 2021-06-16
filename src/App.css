@@ -7,39 +7,84 @@
 ##################### */
 
 /* Common css style */
-button,
-button:hover,
-button:focus{
+
+button, input, input:hover, button:hover, button:focus, input:focus {
     outline: none !important;
-    background:none !important;
+    background: none !important;
     box-shadow: none !important;
     border: none !important;
 }
 
 h1, h2, h3, h4, p {
     font-family: 'Montserrat', sans-serif;
-    color: #fff;
 }
 
 a {
     font-family: 'Montserrat', sans-serif;
     text-decoration: none !important;
+    color: #fff !important;
 }
-.font-12{
-    font-size:12px;
+
+.font-small {
+    font-size: 20px;
+    font-weight: 200;
 }
-.font-14{
-    font-size:14px;
+
+.font-12 {
+    font-size: 12px;
 }
-.font-20{
-    font-size:22px;
+
+.font-14 {
+    font-size: 14px;
+}
+
+.font-17 {
+    font-size: 17px;
+    font-weight: 200;
+}
+
+.font-20 {
+    font-size: 22px;
     font-weight: 600;
 }
-.font-30{
-    font-size:26px;
+
+.font-30 {
+    font-size: 26px;
 }
-.w-75 img{
-    max-width:95% !important;
+
+.w-75 img {
+    max-width: 95% !important;
+}
+
+.color-white {
+    color: #fff !important;
+}
+
+.link-color a {
+    color: #fff !important;
+    font-size: 13px;
+}
+
+.mt-15 {
+    margin-top: 13rem!important;
+}
+
+.mt-75 {
+    margin-top: 7rem;
+}
+
+.list-group-item {
+    background: none !important;
+    background-color: none !important;
+    color: #fff !important;
+}
+.text-underline {
+    text-decoration: underline !important;
+}
+
+.navbar-bg{
+    background: -webkit-linear-gradient(to right, #e75b4c, #df483d);
+    background: linear-gradient(to right, #e75b4c, #df483d);
 }
 /* Common css style */
 
@@ -102,6 +147,7 @@ p.logo-text {
 }
 
 /* Header img animation */
+
 .left-button {
     background: #fff !important;
     color: #121212 !important;
@@ -109,11 +155,11 @@ p.logo-text {
     border-radius: 25px;
     font-size: 12px;
 }
-.left-button:hover,
-.left-button:focus
-{
+
+.left-button:hover, .left-button:focus {
     border: 2px solid #fff !important;
 }
+
 .right-button {
     background-color: #2330ce !important;
     color: #fff !important;
@@ -121,10 +167,11 @@ p.logo-text {
     border-radius: 25px;
     font-size: 12px;
 }
-.right-button:hover,
-.right-button:focus{
+
+.right-button:hover, .right-button:focus {
     border: 2px solid #2330ce !important;
 }
+
 .card {
     border: none;
     background-color: #ffffff;
@@ -155,12 +202,15 @@ p.logo-text {
     text-align: center;
     padding: 40px;
 }
-.work-title{
-    font-size:18px;
+
+.work-title {
+    font-size: 18px;
 }
-.title-text{
+
+.title-text {
     color: #e75b4c;
 }
+
 .work-icon svg {
     margin: 0px 20px;
     color: #e75b4c;
@@ -174,18 +224,104 @@ p.logo-text {
     color: #121212;
     font-size: 12px;
 }
-.feature-container{
+
+.feature-container {
     background: #fff;
     padding-top: 80px;
 }
 
-.price-btn{
-    background:#e3e3e3;
+.price-btn {
+    background: #e3e3e3;
     padding: 10px 13px;
     border-radius: 25px;
     margin: 0px 50px;
     text-align: center;
 }
-.gold-color{
+
+.gold-color {
     background: #e75b4c;
+}
+
+.position-absolute {
+    top: 22%;
+    left: 32%;
+}
+
+.background-img {
+    background: url('../src/Images/Testimonial_bg.png') no-repeat center center;
+    background-size: cover;
+    height: 600px;
+    overflow: hidden;
+}
+.testimonial_card{
+    margin-left: 100px;
+    padding: 0px 20px 0px 20px;
+}
+.footer-container {
+    background: -webkit-linear-gradient(to right, #e75b4c, #df483d);
+    background: linear-gradient(to right, #e75b4c, #df483d);
+}
+
+.submit-btn {
+    background-color: #4c4c4c !important;
+    color: #fff !important;
+    border-radius: 0px !important;
+}
+
+.submit-btn:hover {
+    background-color: #df483d !important;
+    color: #fff !important;
+}
+
+.input-box {
+    background-color: #fff !important;
+    border-radius: 0px !important;
+}
+
+.input-box:hover, .input-box:focus {
+    color: #fff !important;
+    border-radius: 0px;
+    border: 1px solid #fff !important;
+}
+
+.social-icon svg {
+    margin: 16px;
+    background: #fff;
+    color: #df483d;
+    padding: 6px;
+    font-size: 31px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.social-icon svg:hover {
+    margin-top: -2px;
+    transition: .2s ease-in-out all;
+}
+/* About page css */
+
+.about-title{
+    text-align: center;
+}
+@media (max-width: 1200px) {
+    .position-absolute {
+        top: 22.5%;
+        left: 35%;
+    }
+}
+
+@media (max-width: 991px) {
+    .position-absolute {
+        top: 23.5%;
+        left: 32%;
+    }
+}
+
+@media (max-width: 767px) {
+    img.w-75.display {
+        display: none;
+    }
+    .mt-15 {
+        margin-top: 0rem!important;
+    }
 }
