@@ -73,19 +73,39 @@ a {
     margin-top: 7rem;
 }
 
+.rounded-img {
+    border-radius: 12px;
+}
+
+.input-border,
+.input-border:hover,
+.input-border:focus
+{
+    border: 2px solid #e75b4c !important;
+}
+
 .list-group-item {
     background: none !important;
     background-color: none !important;
     color: #fff !important;
 }
+
 .text-underline {
     text-decoration: underline !important;
 }
 
-.navbar-bg{
+.navbar-bg {
     background: -webkit-linear-gradient(to right, #e75b4c, #df483d);
     background: linear-gradient(to right, #e75b4c, #df483d);
 }
+
+.page-title {
+    text-align: center;
+    color: #6d6d6d;
+    padding: 25px;
+    margin-top: 56px;
+}
+
 /* Common css style */
 
 /* ##################################
@@ -208,7 +228,7 @@ p.logo-text {
 }
 
 .title-text {
-    color: #e75b4c;
+    color: #e75b4c !important;
 }
 
 .work-icon svg {
@@ -253,10 +273,12 @@ p.logo-text {
     height: 600px;
     overflow: hidden;
 }
-.testimonial_card{
+
+.testimonial_card {
     margin-left: 100px;
     padding: 0px 20px 0px 20px;
 }
+
 .footer-container {
     background: -webkit-linear-gradient(to right, #e75b4c, #df483d);
     background: linear-gradient(to right, #e75b4c, #df483d);
@@ -298,11 +320,24 @@ p.logo-text {
     margin-top: -2px;
     transition: .2s ease-in-out all;
 }
+
 /* About page css */
 
-.about-title{
+.about-title {
     text-align: center;
 }
+
+/* Blog Page Css */
+
+/* Contact Page Css */
+
+.contact-form {
+    background: white;
+    padding: 50px;
+    margin: 50px 0px 100px 0px;
+    border-radius: 12px;
+}
+
 @media (max-width: 1200px) {
     .position-absolute {
         top: 22.5%;

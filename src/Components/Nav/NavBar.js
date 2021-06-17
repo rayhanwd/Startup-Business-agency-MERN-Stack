@@ -14,9 +14,9 @@ const NavBar = (props) => {
                     <Nav className="ml-auto">
                         <NavLink className="ml-4 text-white" to="/">Home</NavLink>
                         <NavLink className="ml-4 text-white" to="/service">Service</NavLink>
-                        <NavLink className="ml-4 text-white" to="/howWeWork">How Work</NavLink>
-                        <NavLink className="ml-4 text-white" to="/aboutUs">About us</NavLink>
-                        <NavLink className="ml-4 text-white" to="/ourTeam">Team</NavLink>
+                        <NavLink className="ml-4 text-white" to="/howwork">How Work</NavLink>
+                        <NavLink className="ml-4 text-white" to="/aboutus">About us</NavLink>
+                        <NavLink className="ml-4 text-white" to="/ourteam">Team</NavLink>
                         <NavLink className="ml-4 text-white" to="/blog">Blog</NavLink>
                         <NavLink className="ml-4 text-white" to="/contact">Contact</NavLink>
                     </Nav>

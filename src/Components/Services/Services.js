@@ -39,7 +39,7 @@ const Services = () => {
                                     {data.description}
                                 </Card.Text>
                                 <div className="text-center">
-                                    <Link to="/">Read more</Link>
+                                    <Link className="title-text" to="/">Read more</Link>
                                 </div>
                             </Card.Body>
                         </Card>

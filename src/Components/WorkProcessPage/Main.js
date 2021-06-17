@@ -1,34 +1,47 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
-import service_img_0 from '../../Images/fast_growing.png';
-import service_img_1 from '../../Images/Realtime_access.png';
-import service_img_2 from '../../Images/online_database.png';
+import work_img_0 from '../../Images/accept_terms.png';
+import work_img_1 from '../../Images/alert_mc_24_hours.png';
+import work_img_2 from '../../Images/authentication_fsn5.png';
+import work_img_3 from '../../Images/confidential_letter_w6ux.png';
+import work_img_4 from '../../Images/privacy_protection_nlwy.png';
+
 import { Link } from 'react-router-dom';
 
 
-const ServiceData = [
+const WorkData = [
     {
-        image: service_img_0,
-        title: 'Fast Growing',
+        image: work_img_0,
+        title: 'Accept Terms',
         description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus'
     },
     {
-        image: service_img_1,
-        title: 'Real-time Statistics',
+        image: work_img_1,
+        title: 'Alert message for unwanted access',
         description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus'
     },
     {
-        image: service_img_2,
-        title: 'Online Data-base',
+        image: work_img_2,
+        title: 'Users authentication',
+        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus'
+    },
+    {
+        image: work_img_3,
+        title: 'Confidential letter',
+        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus'
+    },
+    {
+        image: work_img_4,
+        title: 'Secure your privacy',
         description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus'
     }
 ];
-const ServiceMain = () => {
+const Main = () => {
     return (
         <Container>
             <Row>
                 {
-                    ServiceData.map(data => <>
+                    WorkData.map(data => <>
 
                         <Col md={6}>
                             <div className="m-5">
@@ -49,4 +62,4 @@ const ServiceMain = () => {
     );
 };
 
-export default ServiceMain;
+export default Main;

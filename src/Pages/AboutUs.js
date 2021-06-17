@@ -6,9 +6,12 @@ import NavBar from './../Components/Nav/NavBar';
 const AboutUs = () => {
     return (
         <>
-            <NavBar background="navbar-bg"/>
-            <AboutCompany/>
-            <Footer/>
+            <NavBar background="navbar-bg" />
+            <div className="page-title">
+                <h1>Startup Agency / About us</h1>
+            </div>
+            <AboutCompany />
+            <Footer />
         </>
     );
 };

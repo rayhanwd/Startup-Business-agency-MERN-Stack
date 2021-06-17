@@ -1,10 +1,17 @@
 import React from 'react';
-import OurService from '../Components/ServicePage/OurService';
+import Footer from '../Components/Footer/Footer';
+import NavBar from './../Components/Nav/NavBar';
+import ServiceMain from './../Components/ServicePage/ServiceMain';
 
 const Service = () => {
     return (
         <>
-        <OurService/>
+            <NavBar background="navbar-bg" />
+            <div className="page-title">
+                <h1>Startup Agency / Our Services</h1>
+            </div>
+            <ServiceMain />
+            <Footer />
         </>
     );
 };

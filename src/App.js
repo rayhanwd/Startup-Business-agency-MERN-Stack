@@ -8,9 +8,10 @@ import './App.css';
 import Service from './Pages/Service';
 import HowWork from './Pages/HowWorks';
 import AboutUs from './Pages/AboutUs';
-import Blog from './Pages/Blog';
+import Blog from './Pages/Blogs';
 import Contact from './Pages/Contact';
 import Home from './Pages/Home';
+import Team from './Pages/Team';
 
 function App() {
   return (
@@ -20,14 +21,14 @@ function App() {
           <Route path="/service">
           <Service />
           </Route>
-          <Route path="/howWeWork">
+          <Route path="/howwork">
           <HowWork />
           </Route>
-          <Route path="/aboutUs">
+          <Route path="/aboutus">
           <AboutUs />
           </Route>
-          <Route path="/ourTeam">
-          <Service />
+          <Route path="/ourteam">
+          <Team />
           </Route>
           <Route path="/blog">
           <Blog />

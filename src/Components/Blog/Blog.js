@@ -25,7 +25,7 @@ const Blog = () => {
         <Container className="Blog-container">
             <Row>
                 <Col className="py-5 text-center" md={12}>
-                    <h3 className="title-text">Our Latest News
+                    <h3 className="title-text">Our Latest Blog
                     </h3>
                     <p>We are provide our best services.We are also working on customer satisfaction<br/> and update our system to take our customer feedback
 
@@ -38,9 +38,9 @@ const Blog = () => {
                             <Card className="shadow-sm">
                                 <Card.Img className="Blog-img mx-auto" variant="top" src={data.image} />
                                 <Card.Body>
-                                    <Link to="/"><h6 className="Blog-title">{data.title}</h6></Link>
-                                    <div className="">
-                                        <Link to="/">Read more</Link>
+                                    <Link to="/"><h6 className="Blog-title title-text">{data.title}</h6></Link>
+                                    <div className="title-text">
+                                        <Link className="title-text" to="/">Read more</Link>
                                     </div>
                                 </Card.Body>
                             </Card>
