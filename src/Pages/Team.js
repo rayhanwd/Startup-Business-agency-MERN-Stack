@@ -1,14 +1,15 @@
 import React from 'react';
 import Footer from '../Components/Footer/Footer';
 import NavBar from '../Components/Nav/NavBar';
+import JustMessage from '../Components/TeamPage/JustMessage';
+import Member from '../Components/TeamPage/Member';
 
 const Team = () => {
     return (
         <>
             <NavBar background="navbar-bg" />
-            <div className="page-title">
-                <h1>Startup Agency / Our Team</h1>
-            </div>
+            <Member />
+            <JustMessage />
             <Footer />
         </>
     );

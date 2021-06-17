@@ -7,9 +7,6 @@ const Contact = () => {
     return (
         <>
             <NavBar background="navbar-bg" />
-            <div className="page-title">
-                <h1>Startup Agency / Contact</h1>
-            </div>
             <ContactForm />
             <Footer />
         </>

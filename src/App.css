@@ -72,7 +72,6 @@ a {
 .mt-75 {
     margin-top: 7rem;
 }
-
 .rounded-img {
     border-radius: 12px;
 }
@@ -100,7 +99,6 @@ a {
 }
 
 .page-title {
-    text-align: center;
     color: #6d6d6d;
     padding: 25px;
     margin-top: 56px;
@@ -330,7 +328,12 @@ p.logo-text {
 /* Blog Page Css */
 
 /* Contact Page Css */
-
+.find-btn a {
+    background: -webkit-linear-gradient(to right, #e75b4c, #df483d);
+    background: linear-gradient(to right, #e75b4c, #df483d);
+    padding: 10px 20px;
+    color: white !important;
+}
 .contact-form {
     background: white;
     padding: 50px;

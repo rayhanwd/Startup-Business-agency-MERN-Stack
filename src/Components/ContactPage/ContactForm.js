@@ -4,6 +4,9 @@ import { Container, Row, Col, Form, Button } from 'react-bootstrap';
 const ContactForm = () => {
     return (
         <Container>
+            <div className="page-title">
+                <h5>Startup Agency / Contact</h5>
+            </div>
             <Row>
                 <Col md={12}>
                     <Form className="contact-form shadow-sm">
@@ -19,13 +22,13 @@ const ContactForm = () => {
                             <Form.Label>Password</Form.Label>
                             <Form.Control className="input-border" type="password" placeholder="Password" />
                             <Form.Text className="text-muted">
-                            Type a strong password for secure your account.
+                                Type a strong password for secure your account.
                             </Form.Text>
                         </Form.Group>
                         <Form.Group controlId="formBasicCheckbox">
                             <Form.Check type="checkbox" label="Remember me" />
                         </Form.Group>
-                        <Button className="submit-btn"type="submit">
+                        <Button className="submit-btn" type="submit">
                             Submit
                         </Button>
                     </Form>

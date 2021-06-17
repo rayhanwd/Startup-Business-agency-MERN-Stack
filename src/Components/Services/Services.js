@@ -1,6 +1,7 @@
 import React from 'react';
 import { Container, Row, Col, Card } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
+import Fade from 'react-reveal/Fade';
 
 import Service__Img_0 from '../../Images/Service_logo_0.png';
 import Service__Img_1 from '../../Images/Service_logo_1.png';
@@ -26,11 +27,12 @@ const ServiceData = [
 const Services = () => {
     return (
         <Container className="service-container">
+            <Fade bottom><>
             <Row>
                 {
                     ServiceData.map(data => 
 
-                    <Col className="p-5" md={4}>
+                    <Col className="p-5" md={6} lg={4}>
                         <Card className="shadow-sm">
                             <Card.Img className="service-img mx-auto" variant="top" src={data.image} />
                             <Card.Body>
@@ -47,6 +49,7 @@ const Services = () => {
                     )
                 }
             </Row>
+            </></Fade>
         </Container>
     );
 };

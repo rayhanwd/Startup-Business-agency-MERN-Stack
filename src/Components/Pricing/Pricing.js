@@ -48,7 +48,7 @@ const Pricing = () => {
                 {
                     ServiceData.map(data =>
 
-                        <Col className="p-5" md={4}>
+                        <Col className="p-5" md={6} lg={4}>
                             <Card className="shadow py-5">
                                 <Card.Text className="title-text text-center font-30">
                                     {data.packageName}
