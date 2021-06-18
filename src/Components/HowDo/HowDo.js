@@ -2,6 +2,7 @@ import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import { FaInbox, FaCloudDownloadAlt, FaEnvelope } from "react-icons/fa";
 import How__work__img from '../../Images/How_we_work.png';
+import Slide from 'react-reveal/Slide';
 
 const HowDo = () => {
     return (
@@ -12,6 +13,7 @@ const HowDo = () => {
                         <h2 className="work-heading">How we Work</h2>
                     </Col>
                     <Col sm={6}>
+                    <Slide left><>
                         <div className="d-flex p-4">
                             <div className="work-icon">
                                 <FaInbox />
@@ -22,6 +24,8 @@ const HowDo = () => {
                                     Risus commodo viverra maecenas accumsan lacus vel facilisis. </p>
                             </div>
                         </div>
+                        </></Slide>
+                        <Slide bottom><>
                         <div className="d-flex p-4">
                             <div className="work-icon">
                                 <FaCloudDownloadAlt />
@@ -31,6 +35,8 @@ const HowDo = () => {
                                 <p className="work-text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab.</p>
                             </div>
                         </div>
+                        </></Slide>
+                        <Slide bottom><>
                         <div className="d-flex p-4">
                             <div className="work-icon">
                                 <FaEnvelope />
@@ -41,11 +47,14 @@ const HowDo = () => {
                                     dicta sunt explicabo</p>
                             </div>
                         </div>
+                        </></Slide>
                     </Col>
                     <Col sm={6}>
+                    <Slide bottom><>
                         <div className="img-fluid w-60 overflow-hidden">
                             <img src={How__work__img} alt="" srcset="" />
                         </div>
+                        </></Slide>
                     </Col>
                 </Row>
             </Container>

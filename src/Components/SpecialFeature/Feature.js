@@ -2,6 +2,8 @@ import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import { GiCheckMark } from "react-icons/gi";
 import Feature__img from '../../Images/StartUp_feature.png';
+import Slide from 'react-reveal/Slide';
+import Fade from 'react-reveal/Fade';
 
 const Feature = () => {
     return (
@@ -9,15 +11,20 @@ const Feature = () => {
             <Container>
                 <Row>
                     <Col sm={6}>
+                    <Fade bottom><>
                         <div className="img-fluid w-75">
                             <img className="mx-auto" src={Feature__img} alt="" srcset="" />
                         </div>
+                        </></Fade>
                     </Col>
                     <Col sm={6}>
+                    <Slide right><>
                         <div>
                             <h5 className="title-text">Start-up Agency’s special features</h5>
                             <p className="text-dark font-12">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                         </div>
+                        </></Slide>
+                        <Slide bottom><>
                         <div className="d-flex">
                             <div className="p-4">
                                 <div>
@@ -36,6 +43,7 @@ const Feature = () => {
                                 </div>
                             </div>
                         </div>
+                        </></Slide>
                     </Col>
                 </Row>
             </Container>

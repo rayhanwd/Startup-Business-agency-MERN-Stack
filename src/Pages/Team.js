@@ -5,6 +5,7 @@ import JustMessage from '../Components/TeamPage/JustMessage';
 import Member from '../Components/TeamPage/Member';
 
 const Team = () => {
+    document.title = 'Team | Lk Startup Business Solution'
     return (
         <>
             <NavBar background="navbar-bg" />

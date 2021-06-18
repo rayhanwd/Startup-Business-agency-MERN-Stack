@@ -4,7 +4,7 @@ import service_img_0 from '../../Images/fast_growing.png';
 import service_img_1 from '../../Images/Realtime_access.png';
 import service_img_2 from '../../Images/online_database.png';
 import { Link } from 'react-router-dom';
-
+import Slide from 'react-reveal/Slide';
 
 const ServiceData = [
     {
@@ -26,27 +26,31 @@ const ServiceData = [
 const ServiceMain = () => {
     return (
         <Container>
-            <Row>
-                {
-                    ServiceData.map(data => <>
+                <Row>
+                    {
+                        ServiceData.map(data => <>
 
-                        <Col md={6}>
-                            <div className="m-5">
-                                <img className="img-fluid rounded-img" src={data.image} alt="" srcset="" />
-                            </div>
-                        </Col>
-                        <Col md={6}>
-                            <div className="my-5">
-                                <h3>{data.title}</h3>
-                                <p>{data.description}</p>
-                                <Link className="title-text" to='/'>Read more</Link>
-                            </div>
-                        </Col>
-                    </>)
-                }
-            </Row>
+                            <Col md={6}>
+                            <Slide bottom>
+                                <div className="m-5">
+                                    <img className="img-fluid rounded-img" src={data.image} alt="" srcset="" />
+                                </div>
+                                </Slide>
+                            </Col>
+                            <Col md={6}>
+                            <Slide right>
+                                <div className="my-5">
+                                    <h3>{data.title}</h3>
+                                    <p>{data.description}</p>
+                                    <Link className="title-text" to='/'>Read more</Link>
+                                </div>
+                                </Slide>
+                            </Col>
+                        </>)
+                    }
+                </Row>
         </Container>
-    );
+            );
 };
 
-export default ServiceMain;
+            export default ServiceMain;

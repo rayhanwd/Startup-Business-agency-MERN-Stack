@@ -12,6 +12,7 @@ import Blog from './Pages/Blogs';
 import Contact from './Pages/Contact';
 import Home from './Pages/Home';
 import Team from './Pages/Team';
+import Admin from './Components/AdminPanel/Admin';
 
 function App() {
   return (
@@ -35,6 +36,9 @@ function App() {
           </Route>
           <Route path="/contact">
           <Contact />
+          </Route>
+          <Route path="/admin">
+          <Admin />
           </Route>
           <Route path="/">
           <Home />

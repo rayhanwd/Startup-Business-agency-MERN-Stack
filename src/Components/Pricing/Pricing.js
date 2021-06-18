@@ -2,7 +2,7 @@ import React from 'react';
 import { Container, Row, Col, Card } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import { GiCheckMark } from "react-icons/gi";
-
+import Fade from 'react-reveal/Fade';
 const ServiceData = [
     {
         packageName: 'Silver Plan',
@@ -40,6 +40,7 @@ const ServiceData = [
 const Pricing = () => {
     return (
         <Container className="py-5">
+            <Fade bottom>
             <Row>
                 <Col xs={12}>
                     <h3 className="text-center title-text pt-5">Choose the best plan for you</h3>
@@ -68,6 +69,7 @@ const Pricing = () => {
                     )
                 }
             </Row>
+            </Fade>
         </Container>
     );
 };

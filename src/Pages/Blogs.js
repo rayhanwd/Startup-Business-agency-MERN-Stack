@@ -5,6 +5,7 @@ import Footer from '../Components/Footer/Footer';
 import NavBar from '../Components/Nav/NavBar';
 
 const Blogs = () => {
+    document.title = 'Blog | Lk Startup Business Solution'
     return (
         <>
             <NavBar background="navbar-bg" />

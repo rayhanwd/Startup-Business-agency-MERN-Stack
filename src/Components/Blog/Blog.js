@@ -1,6 +1,7 @@
 import React from 'react';
 import { Container, Row, Col, Card } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
+import Slide from 'react-reveal/Slide';
 
 import Blog__Img_0 from '../../Images/blog_0.png';
 import Blog__Img_1 from '../../Images/blog_1.png';
@@ -23,33 +24,35 @@ const BlogData = [
 const Blog = () => {
     return (
         <Container className="Blog-container">
-            <Row>
-                <Col className="py-5 text-center" md={12}>
-                    <h3 className="title-text">Our Latest Blog
-                    </h3>
-                    <p>We are provide our best services.We are also working on customer satisfaction<br/> and update our system to take our customer feedback
+            <Slide bottom>
+                <Row>
+                    <Col className="py-5 text-center" md={12}>
+                        <h3 className="title-text">Our Latest Blog
+                        </h3>
+                        <p>We are provide our best services.We are also working on customer satisfaction<br /> and update our system to take our customer feedback
 
-                    </p>
-                </Col>
-                {
-                    BlogData.map(data =>
+                        </p>
+                    </Col>
+                    {
+                        BlogData.map(data =>
 
-                        <Col className="py-5" md={4}>
-                            <Card className="shadow-sm">
-                                <Card.Img className="Blog-img mx-auto" variant="top" src={data.image} />
-                                <Card.Body>
-                                    <Link to="/"><h6 className="Blog-title title-text">{data.title}</h6></Link>
-                                    <div className="title-text">
-                                        <Link className="title-text" to="/">Read more</Link>
-                                    </div>
-                                </Card.Body>
-                            </Card>
-                        </Col>
-                    )
-                }
-            </Row>
+                            <Col className="py-5" md={4}>
+                                <Card className="shadow-sm">
+                                    <Card.Img className="Blog-img mx-auto" variant="top" src={data.image} />
+                                    <Card.Body>
+                                        <Link to="/"><h6 className="Blog-title title-text">{data.title}</h6></Link>
+                                        <div className="title-text">
+                                            <Link className="title-text" to="/">Read more</Link>
+                                        </div>
+                                    </Card.Body>
+                                </Card>
+                            </Col>
+                        )
+                    }
+                </Row>
+                </Slide>
         </Container>
-    );
+            );
 };
 
-export default Blog;
+            export default Blog;

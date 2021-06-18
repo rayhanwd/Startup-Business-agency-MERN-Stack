@@ -5,7 +5,7 @@ import work_img_1 from '../../Images/alert_mc_24_hours.png';
 import work_img_2 from '../../Images/authentication_fsn5.png';
 import work_img_3 from '../../Images/confidential_letter_w6ux.png';
 import work_img_4 from '../../Images/privacy_protection_nlwy.png';
-
+import Slide from 'react-reveal/Slide';
 import { Link } from 'react-router-dom';
 
 
@@ -42,18 +42,22 @@ const Main = () => {
             <Row>
                 {
                     WorkData.map(data => <>
-
                         <Col md={6}>
-                            <div className="m-5">
-                                <img className="img-fluid rounded-img" src={data.image} alt="" srcset="" />
-                            </div>
-                        </Col>
-                        <Col md={6}>
-                            <div className="my-5">
+                        <Slide left>
+                            <div className="mt-5 pt-5">
                                 <h3>{data.title}</h3>
                                 <p>{data.description}</p>
                                 <Link className="title-text" to='/'>Read more</Link>
                             </div>
+                            </Slide>
+                        </Col>
+
+                        <Col md={6}>
+                        <Slide bottom>
+                            <div className="m-5">
+                                <img className="img-fluid rounded-img" src={data.image} alt="" srcset="" />
+                            </div>
+                            </Slide>
                         </Col>
                     </>)
                 }

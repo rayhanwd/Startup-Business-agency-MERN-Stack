@@ -5,6 +5,7 @@ import NavBar from './../Components/Nav/NavBar';
 import ServiceMain from './../Components/ServicePage/ServiceMain';
 
 const Service = () => {
+    document.title = 'Services | Lk Startup Business Solution'
     return (
         <>
             <NavBar background="navbar-bg" />

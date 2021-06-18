@@ -3,6 +3,7 @@ import member_1 from '../../Images/Team_member/member1.jpg';
 import member_2 from '../../Images/Team_member/member2.jpg';
 import member_3 from '../../Images/Team_member/member3.jpg';
 import { Row, Col, Card, Container } from 'react-bootstrap';
+import Fade from 'react-reveal/Fade';
 
 const MemberData = [
     {
@@ -27,6 +28,7 @@ const Member = () => {
             <div className="page-title">
                 <h5>Startup Agency / Our Team</h5>
             </div>
+            <Fade top>
             <Row>
                 {
                     MemberData.map(data =>
@@ -45,6 +47,7 @@ const Member = () => {
                     )
                 }
             </Row>
+            </Fade>
         </Container>
     );
 };

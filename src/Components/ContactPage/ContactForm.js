@@ -1,5 +1,6 @@
 import React from 'react';
 import { Container, Row, Col, Form, Button } from 'react-bootstrap';
+import Fade from 'react-reveal/Fade';
 
 const ContactForm = () => {
     return (
@@ -7,6 +8,7 @@ const ContactForm = () => {
             <div className="page-title">
                 <h5>Startup Agency / Contact</h5>
             </div>
+            <Fade bottom>
             <Row>
                 <Col md={12}>
                     <Form className="contact-form shadow-sm">
@@ -34,6 +36,7 @@ const ContactForm = () => {
                     </Form>
                 </Col>
             </Row>
+            </Fade>
         </Container>
     );
 };

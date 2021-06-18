@@ -7,6 +7,7 @@ import Main from '../Components/WorkProcessPage/Main';
 
 
 const AboutUs = () => {
+    document.title = 'About | Lk Startup Business Solution'
     return (
         <>
             <NavBar background="navbar-bg" />
