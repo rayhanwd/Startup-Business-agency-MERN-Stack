@@ -5,7 +5,7 @@ import logo from '../../Images/StartUp_logo.png';
 const NavBar = (props) => {
     return (
         <div className={props.background}>
-            <Navbar expand="lg">
+            <Navbar id="navbar" expand="lg">
                 <Navbar.Brand href="/">
                     <img alt="START-UP LOGO mt-4" src={logo} className="d-inline-block align-top" />{' '}<span className="logo-text">START-UP</span><p className="logo-text">AGENCY</p>
                 </Navbar.Brand>

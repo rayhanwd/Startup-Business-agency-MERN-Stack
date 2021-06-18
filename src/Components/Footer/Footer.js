@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container, Row, Col, InputGroup, FormControl, Button } from 'react-bootstrap';
 import site_logo from '../../Images/StartUp_logo.png';
-import { FaFacebookF, FaTwitter, FaYoutube, FaLinkedinIn } from "react-icons/fa";
+import { FaFacebookF, FaTwitter, FaYoutube, FaLinkedinIn, FaArrowUp } from "react-icons/fa";
 import { Link } from 'react-router-dom';
 
 const Footer = () => {
@@ -16,7 +16,7 @@ const Footer = () => {
                         <p className="text-white font-12">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum, adipisci eius sit, exercitationem quasi laudantium libero, culpa cum quas tempore quae voluptas.</p>
                         <span className="text-white font-12 text-underline"><Link to='/'>See more</Link></span>
                         <span className="ml-3 text-white font-12 text-underline">
-                        <Link to='/'>Ask Question</Link></span>
+                            <Link to='/'>Ask Question</Link></span>
                     </Col>
                     <Col md={3}>
                         <div className="mt-5 bg-none">
@@ -69,6 +69,9 @@ const Footer = () => {
                     </Col>
                 </Row>
             </Container>
+            <div className="back-to-top">
+                <a href="#navbar"><FaArrowUp /></a>
+            </div>
         </div>
     );
 };

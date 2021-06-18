@@ -56,6 +56,13 @@ a {
     max-width: 95% !important;
 }
 
+.w-10 {
+    width: 60px;
+    margin-top: 13px;
+    border-radius: 50%;
+    height: 60px;
+}
+
 .color-white {
     color: #fff !important;
 }
@@ -69,17 +76,19 @@ a {
     margin-top: 13rem!important;
 }
 
+.ml-xl {
+    margin-left: 420px !important;
+}
+
 .mt-75 {
     margin-top: 7rem;
 }
+
 .rounded-img {
     border-radius: 12px;
 }
 
-.input-border,
-.input-border:hover,
-.input-border:focus
-{
+.input-border, .input-border:hover, .input-border:focus {
     border: 2px solid #e75b4c !important;
 }
 
@@ -328,17 +337,33 @@ p.logo-text {
 /* Blog Page Css */
 
 /* Contact Page Css */
+
 .find-btn a {
     background: -webkit-linear-gradient(to right, #e75b4c, #df483d);
     background: linear-gradient(to right, #e75b4c, #df483d);
     padding: 10px 20px;
     color: white !important;
 }
+
 .contact-form {
     background: white;
     padding: 50px;
     margin: 50px 0px 100px 0px;
     border-radius: 12px;
+}
+
+/* back to top icon design */
+
+.back-to-top {
+    text-align: end;
+}
+
+.back-to-top svg {
+    color: white !important;
+    font-size: 33px;
+    background-color: #4c4c4c !important;
+    padding: 5px;
+    cursor: pointer;
 }
 
 @media (max-width: 1200px) {
