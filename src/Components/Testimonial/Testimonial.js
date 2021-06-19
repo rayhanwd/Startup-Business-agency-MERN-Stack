@@ -4,7 +4,14 @@ import { Link } from 'react-router-dom';
 import Slide from 'react-reveal/Slide';
 import T_photo from '../../Images/Team_member/member2.jpg';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import SwiperCore, { Autoplay, Pagination } from 'swiper';
+
+import "swiper/swiper.min.css";
+import "swiper/components/pagination/pagination.min.css"
+import "swiper/components/navigation/navigation.min.css"
+
+import SwiperCore, {
+    Autoplay,Pagination
+  } from 'swiper/core';
 
 const ReviewData = [
     {
@@ -37,7 +44,6 @@ const Testimonial = () => {
                     <Col xs={12} md={6}>
                         <Swiper
                             loop={true}
-                            centeredSlides={true}
                             slidesPerView={1}
                             autoplay={{
                                 delay: 2500,
@@ -45,19 +51,20 @@ const Testimonial = () => {
                                
                             }}
                           
-                        > <SwiperSlide className="ml-xl">
+                        > 
                             {
                                 ReviewData.map(data =>
+                                    <SwiperSlide className="">
                                         <Card className="testimonial_card mt-15">
                                             <img className="w-10 img-fluid" src={data.photo} alt="" srcset="" />
                                             <h5>{data.name}</h5>
                                             <p className="font-12 pb-0 mb-0">{data.description}</p>
                                             <Link to="/" className="text-dark font-12 py-2">Read more</Link>
                                         </Card>
+                                        </SwiperSlide>
                                 )
                             }
                                 
-                        </SwiperSlide>
                         </Swiper>
                     </Col>
                     <Col xs={12} sm={6}>
